@@ -1,5 +1,5 @@
 # MARIYA FAIN 
-![My Photo](./photo.jpg)
+![My Photo](./photo.png)
 ## FRONTEND DEVELOPER (JavaScript, React)
 ##### Email: *fainmariya@gmail.com* | 🔗 [LinkedIn](https://www.linkedin.com/feed/) | [GitHub](https://github.com/fainmariya/) | 
 ********* 
@@ -26,19 +26,12 @@ management with React hooks, authentication, accessibility, performance optimiza
 ### 🔹 React State Example
 
 ```javascript
-import { useState } from "react";
-
-export default function Counter() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>{count}</p>
-      <button onClick={() => setCount(count + 1)}>
-        Increment
-      </button>
-    </div>
-  );
+function createPhoneNumber(numbers){
+    let areaCode = "(" + numbers.slice(0,3).join("") + ")"
+    let partOne = numbers.slice(3,6).join("")
+    let partTwo = numbers.slice(6,10).join("")
+    return areaCode + " " + partOne + " -"  + partTwo
+ 
 }
 ```
 *********
