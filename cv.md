@@ -1,5 +1,5 @@
 # MARIYA FAIN 
-![My Photo](./photo.png)
+![My Photo](./photo.jpg)
 ## FRONTEND DEVELOPER (JavaScript, React)
 ##### Email: *fainmariya@gmail.com* | 🔗 [LinkedIn](https://www.linkedin.com/feed/) | [GitHub](https://github.com/fainmariya/) | 
 ********* 
