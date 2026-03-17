@@ -1,4 +1,5 @@
 # MARIYA FAIN 
+![My Photo](./photo.jpg)
 ## FRONTEND DEVELOPER (JavaScript, React)
 ##### Email: *fainmariya@gmail.com* | 🔗 [!LinkedIn](https://www.linkedin.com/feed/) | [!GitHub](https://github.com/fainmariya/) | 
 ********* 
@@ -39,6 +40,7 @@ export default function Counter() {
     </div>
   );
 }
+```
 *********
 ## PROJECTS
 ### Keeper App (React) — GitHub
