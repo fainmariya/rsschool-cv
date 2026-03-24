@@ -8,3 +8,79 @@ html {
     background: linear-gradient(to right, #e6d8cc, #d6c3b1);
     color: #2f2620;
   }
+  .navigation-list{
+    display: flex;
+    gap: 200px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .navigation-list a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #5c4635;
+    padding: 6px 10px;
+    
+  }
+  .page {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fffaf5;
+    border-radius: 10px;
+  }
+  
+  
+  .profile {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c5b1a1;
+  }
+  
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px; 
+    object-fit: cover;
+  }
+  
+  .profile-text h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+  .page-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-left: 4px solid #c5b1a1;
+    padding-left: 10px;
+  }
+  
+  .profile-contacts {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-contacts a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #5c4635;
+    padding: 6px 10px;
+    border: 1px solid #c5b1a1;
+    border-radius: 6px;
+  }
+  
+  .profile-contacts a:hover {
+    background-color: #e9dbcd;
+  }
