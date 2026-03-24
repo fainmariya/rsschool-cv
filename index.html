@@ -6,11 +6,7 @@
     <title>Mariya Fain CV</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <script>
-    function showPhone() {
-      alert("📞 +972 51 571 7198");
-    }
-  </script>
+  
   <body>
     <div class="page">
         <header class="page-header">
@@ -34,10 +30,26 @@
                     <p class="profession">Frontend Developer</p>
               
                     <div class="profile-contacts">
-                      <a href="#" onclick="showPhone()">📞 Phone</a>  
-                      <a href="mailto:fainmariya@gmail.com">Email</a>
-                      <a href="https://github.com/fainmariya/">GitHub</a>
-                      <a href="https://www.linkedin.com/">LinkedIn</a>
+                        <button type="button" onclick="openModal()">📞 Phone</button>
+                        <a href="mailto:fainmariya@gmail.com">Email</a>
+                        <a href="https://github.com/fainmariya/">GitHub</a>
+                        <a href="https://www.linkedin.com/">LinkedIn</a>
+
+                        <div id="phoneModal" class="modal">
+                            <div class="modal-content">
+                              <span onclick="closeModal()" class="close">&times;</span>
+                              <p>+972 51 571 7198</p>
+                            </div>
+                        </div> 
+                        <script>
+                            function openModal() {
+                              document.getElementById("phoneModal").modal.style.display = "flex";;
+                            }
+                          
+                            function closeModal() {
+                              document.getElementById("phoneModal").style.display = "none";
+                            }
+                          </script>
                     </div>
                   </div>
               
@@ -142,7 +154,15 @@
       </main>
 
       <footer class="page-footer">
-        
+        <a href="https://github.com/fainmariya/">My GitHub</a>
+        <span>2026</span>
+        <a href="https://rs.school/courses/javascript-preschool-ru">
+          <img
+            src="images/rs-school-logo.svg"
+            width="80"
+            height="30"
+          >
+        </a>
       </footer>
     </div>
   </body>
