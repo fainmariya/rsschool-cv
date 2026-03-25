@@ -37,8 +37,9 @@ html {
     align-items: center;
     padding-bottom: 20px;
     border-bottom: 2px solid #c5b1a1;
+    
   }
-  
+ 
   .profile-photo {
     width: 140px;
     height: 140px;
@@ -66,13 +67,10 @@ html {
     padding-left: 10px;
   }
   
-  .profile-contacts {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
+  
   
   .profile-contacts a {
+   
     font-size: 14px;
     text-decoration: none;
     color: #5c4635;
@@ -83,4 +81,131 @@ html {
   
   .profile-contacts a:hover {
     background-color: #e9dbcd;
+  }
+  
+ 
+  pre {
+    background-color: #f3e7dc;
+    padding: 15px;
+    border-radius: 6px;
+  }
+  
+ 
+  .page-footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #c5b1a1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .page-footer img {
+    width: 90px;
+  }
+  .page-footer a {
+    color: #222222;
+    text-decoration: none;
+  }
+  
+  .page-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .page-footer img {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .page {
+      padding: 25px 20px;
+    }
+  
+    
+  
+.page-main {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+.page-footer {
+      flex-direction: column;
+    }
+  
+h1 {
+      font-size: 36px;
+    }
+  
+.profession {
+      font-size: 20px;
+    }
+
+
+      
+.modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 280px;
+        padding: 24px 20px;
+        background-color: #4f4a45;
+        border: 1px solid #c5b1a1;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+      }
+      
+.close-button {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        line-height: 1;
+        cursor: pointer;
+        color: #5c4635;
+      }
+      
+.modal-phone {
+        margin: 10px 0 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2f2620;
+        padding: 10;
+      }
+}
+.profile-contacts button {
+    font-size: 14px;
+    color: #5c4635;
+    padding: 6px 10px;
+    border: 1px solid #c5b1a1;
+    border-radius: 6px;
+    background-color: #fffaf5;
+    cursor: pointer;
+  }
+  
+  .profile-contacts button:hover {
+    background-color: #e9dbcd;
+  }
+  .profile-contacts {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+  }
+  .phone-popup {
+    display: none;
+    position: center;
+    
+    left: 0;
+    padding-top: 10 px;
+    padding: 0px 16px;
+    background-color: #f3e7dc;
+    border: 1px solid #b79f8c;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(158, 114, 114, 0.12);
   }
