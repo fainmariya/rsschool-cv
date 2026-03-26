@@ -140,22 +140,6 @@ h1 {
       font-size: 20px;
     }
 
-
-      
-.modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 280px;
-        padding: 24px 20px;
-        background-color: #4f4a45;
-        border: 1px solid #c5b1a1;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        transform: translate(-50%, -50%);
-        text-align: center;
-        
-      }
       
 .close-button {
         position: absolute;
@@ -199,13 +183,14 @@ h1 {
   }
   .phone-popup {
     display: none;
-    position: center;
+    position: absolute;
     
-    left: 0;
-    padding-top: 10 px;
-    padding: 0px 16px;
+    
+    padding: 8px 8px;
+    margin-top: 28px;
+    margin-left: 0px;
     background-color: #f3e7dc;
     border: 1px solid #b79f8c;
     border-radius: 8px;
-    box-shadow: 0 6px 14px rgba(158, 114, 114, 0.12);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
   }
