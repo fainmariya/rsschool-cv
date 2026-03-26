@@ -1,0 +1,196 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #e6d8cc, #d6c3b1);
+    color: #2f2620;
+  }
+  .navigation-list{
+    display: flex;
+    gap: 200px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .navigation-list a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #5c4635;
+    padding: 6px 10px;
+    
+  }
+  .page {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fffaf5;
+    border-radius: 10px;
+  }
+  
+  
+  .profile {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c5b1a1;
+    
+  }
+ 
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px; 
+    object-fit: cover;
+  }
+  
+  .profile-text h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+  .page-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-left: 4px solid #c5b1a1;
+    padding-left: 10px;
+  }
+  
+  
+  
+  .profile-contacts a {
+   
+    font-size: 14px;
+    text-decoration: none;
+    color: #5c4635;
+    padding: 6px 10px;
+    border: 1px solid #c5b1a1;
+    border-radius: 6px;
+  }
+  
+  .profile-contacts a:hover {
+    background-color: #e9dbcd;
+  }
+  
+ 
+  pre {
+    background-color: #f3e7dc;
+    padding: 15px;
+    border-radius: 6px;
+  }
+  
+ 
+  .page-footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #c5b1a1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .page-footer img {
+    width: 90px;
+  }
+  .page-footer a {
+    color: #222222;
+    text-decoration: none;
+  }
+  
+  .page-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .page-footer img {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .page {
+      padding: 25px 20px;
+    }
+  
+    
+  
+.page-main {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+.page-footer {
+      flex-direction: column;
+    }
+  
+h1 {
+      font-size: 36px;
+    }
+  
+.profession {
+      font-size: 20px;
+    }
+
+      
+.close-button {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        line-height: 1;
+        cursor: pointer;
+        color: #5c4635;
+      }
+      
+.modal-phone {
+        margin: 10px 0 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #2f2620;
+        padding: 10;
+      }
+}
+.profile-contacts button {
+    font-size: 14px;
+    color: #5c4635;
+    padding: 6px 10px;
+    border: 1px solid #c5b1a1;
+    border-radius: 6px;
+    background-color: #fffaf5;
+    cursor: pointer;
+  }
+  
+  .profile-contacts button:hover {
+    background-color: #e9dbcd;
+  }
+  .profile-contacts {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+  }
+  .phone-popup {
+    display: none;
+    position: absolute;
+    
+    
+    padding: 8px 8px;
+    margin-top: 28px;
+    margin-left: 0px;
+    background-color: #f3e7dc;
+    border: 1px solid #b79f8c;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  }

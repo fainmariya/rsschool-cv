@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariya Fain CV</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <div class="page">
+        <header class="page-header">
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>               
+              </ul>
+            </nav>
+          
+            <div class="profile">
+                <img
+                class="profile-photo"
+                src="images/photo.jpg"
+                alt="My photo"
+                >
+                <div class="profile-text">
+                    <h1>Mariya Fain</h1>
+                    <p class="profession">Frontend Developer</p>
+              
+                    <div class="profile-contacts">
+                        <button type="button" class="phone-button" onclick="togglePhonePopup()">📞 Phone</button>
+                        <a href="mailto:fainmariya@gmail.com">Email</a>
+                        <a href="https://github.com/fainmariya/">GitHub</a>
+                        <a href="https://www.linkedin.com/">LinkedIn</a>
+                    </div>
+                        <div id="phonePopup" class="phone-popup">
+                           <p class="phone-number">+972 51 571 7198</p>
+                        </div>
+                </div>  
+              
+            </div>
+          </header>
+      <main class="page-main">
+        <aside class="sidebar">
+            <section class="section" id="summary">
+                <h2>Summary</h2>
+                <p>
+                  Junior Frontend Developer with over a year of hands-on experience building
+                  responsive, modern web applications using JavaScript, React, and Node/Express.
+                  Skilled in REST APIs, PostgreSQL, and modern development tools. Passionate about
+                  clean UI, accessibility, and performance optimization. Seeking a collaborative
+                  environment to grow as a developer and contribute to impactful projects.
+                </p>
+              </section>
+  
+            <section class="section" id="skills">
+              <h2>Skills</h2>
+              <ul class="section-list">
+                <li><strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3</li>
+                <li><strong>Frameworks/Libraries:</strong> React, Node.js, Express</li>
+                <li><strong>Database:</strong> PostgreSQL (CRUD, basic SQL)</li>
+                <li><strong>Tools:</strong> Git &amp; GitHub, npm, axios, EJS, Bootstrap, jQuery</li>
+                <li><strong>Practices:</strong> Responsive design, REST API integration, component-based architecture, state management with React hooks, authentication, accessibility, performance optimization</li>
+              </ul>
+            </section>
+  
+            
+          </aside>
+  
+          <div class="content">
+            
+  
+            <section class="section" id="code">
+              <h2>Code Example</h2>
+              <pre><code>function createPhoneNumber(numbers) {
+    let areaCode = "(" + numbers.slice(0, 3).join("") + ")";
+    let partOne = numbers.slice(3, 6).join("");
+    let partTwo = numbers.slice(6, 10).join("");
+  
+    return areaCode + " " + partOne + "-" + partTwo;
+  }
+              </code></pre>
+            </section>
+  
+            <section class="section" id="projects">
+              <h2>Projects</h2>
+              <ul class="section-list">
+                <li>
+                  <strong>Keeper App (React)</strong> —
+                  <a href="https://github.com/fainmariya/Keeper-App_update_React-Dependencies-Styling">GitHub</a>
+                  <p>React-based clone of Google Keep for creating and deleting notes.</p>
+                  <p>Built with reusable React components, props, and hooks for state management.</p>
+                  <p>Responsive and minimalistic UI emphasizing usability.</p>
+                </li>
+                <li>
+                  <strong>A-List with Tasks (React)</strong> —
+                  <a href="https://github.com/fainmariya/A-list-with-tasks">GitHub</a>
+                  <p>To-do list web app with task creation and deletion.</p>
+                  <p>Implemented clean state management using React hooks.</p>
+                  <p>Modular component structure for better reusability and maintainability.</p>
+                </li>
+                <li>
+                  <strong>Books Tracker (React + Express + PostgreSQL)</strong> —
+                  <a href="https://sorting-books-read.onrender.com/">Live Demo</a>,
+                  <a href="https://github.com/fainmariya/sorting-books-read">GitHub</a>
+                  <p>CRUD app for managing books with inline editing and sorting.</p>
+                  <p>Integrated OpenLibrary API for book covers.</p>
+                  <p>Deployed on Render.</p>
+                </li>
+                <li>
+                  <strong>UV Index Dashboard (Node + EJS + API)</strong> —
+                  <a href="https://uv-index-project.onrender.com/uv">Live Demo</a>,
+                  <a href="https://github.com/fainmariya/UV-Index-project">GitHub</a>
+                  <p>Displays real-time UV index data.</p>
+                  <p>Dynamic interface and responsive layout.</p>
+                  <p>Includes basic authentication.</p>
+                </li>
+              </ul>
+            </section>
+  
+            <section class="section" id="education">
+              <h2>Education</h2>
+              <ul class="section-list">
+                <li><strong>NodeJS</strong> — RS School, 2025</li>
+                <li><strong>Full-Stack Web Developer</strong> — Udemy, 2025</li>
+                <li><strong>Python Developer</strong> — Python Institute, 2023</li>
+                <li><strong>Python Developer</strong> — Specter, Certificate Associate in Python Programming Certification (Israel), 2022–2023</li>
+                <li><strong>Telecommunications Engineer</strong> — Volga State University of Telecommunications and Informatics (Russia), 1996–2001</li>
+              </ul>
+            </section>
+            <section class="section" id="languages">
+                <h2>Languages</h2>
+                <ul class="section-list">
+                  <li>English — Fluent</li>
+                  <li>Russian — Native</li>
+                  <li>Hebrew — Intermediate</li>
+                </ul>
+              </section>
+          </div>
+      </main>
+
+      <footer class="page-footer">
+        <a href="https://github.com/fainmariya/">My GitHub</a>
+        <span>2026</span>
+        <a href="https://rs.school/courses/javascript-preschool-ru">
+          <img
+            src="images/rs-school-logo.svg"
+            width="80"
+            height="30"
+            alt="logo"
+          >
+        </a>
+      </footer>
+    </div>
+    <script>
+        function togglePhonePopup() {
+          const popup = document.getElementById("phonePopup");
+      
+          if (popup.style.display === "block") {
+            popup.style.display = "none";
+          } else {
+            popup.style.display = "block";
+          }
+        }
+      </script>
+  </body>
+</html>
