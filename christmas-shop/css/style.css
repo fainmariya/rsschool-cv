@@ -110,7 +110,12 @@
     background-color: rgba(255, 70, 70, 0.1);
     color: #ff4646;
   }
-  
+  .navigation-link--active {
+    background-color: rgba(255, 70, 70, 0.1);
+    color: #ff4646;
+    pointer-events: none;
+    cursor: default;
+  }
 
   
   .hero {
@@ -498,7 +503,7 @@
   .cta-title {
     margin: 0 0 20px;
     max-width: 430px;
-    font-family: "Montserrat" sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     line-height: 1.5;
     font-weight: 600;
@@ -773,11 +778,12 @@
     transition: background-color 0.3s ease;
   }
   
-  .tab:hover {
+  .tab.active:hover {
     background: rgba(255,255,255,0.2);
   }
   
   .tab.active {
     background: rgba(255,255,255,0.3);
     pointer-events: none;
+    cursor: default;
   }
