@@ -499,7 +499,7 @@
   .cta-title {
     margin: 0 0 20px;
     max-width: 430px;
-  
+    font-family: "Montserrat" sans-serif;
     font-size: 24px;
     line-height: 1.5;
     font-weight: 600;
@@ -711,4 +711,74 @@
   
   .footer-made:hover {
     color: #ff4646;
+  }
+
+  .gifts-page {
+    position: relative;
+    background-color: #ff4646;
+    overflow: hidden;
+    padding: 60px 0 120px;
+    border-radius: 20px;
+  }
+  .gifts-page .container {
+    padding: 0 8px;
+  }
+  .gifts-page__garland {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: block;
+   
+  
+  }
+  
+.gift-title {
+    max-width: 426px;
+    margin: 0 auto;
+    text-align: center;
+  
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+.gift-content{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.gifts-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0 40px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab:hover {
+    background: rgba(255,255,255,0.2);
+  }
+  
+  .tab.active {
+    background: rgba(255,255,255,0.3);
+    pointer-events: none;
   }
