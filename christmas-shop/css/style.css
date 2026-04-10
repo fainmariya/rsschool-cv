@@ -21,7 +21,10 @@
   *::after {
     box-sizing: border-box;
   }
-  
+  body{
+    width: 100%;
+    overflow-x: clip;
+  }
   body {
     margin: 0;
     background-color: #ffffff;
@@ -37,6 +40,7 @@
   img {
     display: block;
     max-width: 100%;
+    height: auto;
   }
   
   ul {
@@ -106,121 +110,150 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  .navigation-link:hover {
-    background-color: rgba(255, 70, 70, 0.1);
-    color: #ff4646;
-  }
+  
   .navigation-link--active {
     background-color: rgba(255, 70, 70, 0.1);
     color: #ff4646;
     pointer-events: none;
     cursor: default;
   }
-
-  
-  .hero {
-    
-    background-color: #ff4646;
-    background-image: url("../assets/images/bg-snow.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
-  }
-  
-  .hero-container {
-    position: relative;
-  }
-  
-  .hero-ball {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1440px;
-    height: 524px;
-  }
-  
-  .hero-content {
-    position: absolute;
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 426px;
-    display: flex;
+  .burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    text-align: center;
-    z-index: 1;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .burger-line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #181c29;
+    border-radius: 2px;
+  
+}
+.burger {
+  outline: 2px solid red;
 }
   
-  .hero-caption {
-    position: relative;
-    top: -5px;
-    width: 426px;
-    font-family: "Allura", cursive;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 100 ;
-    opacity: 0.7;
-  }
-  
-  .hero-title {
-    position: relative;
-    top: -50px;
-    width: 426px;
-    font-size: 32px;
-    line-height: 1.5;
-    font-weight: 300;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  
-  .hero-button {
-    position: relative;
-    top: -70px;
-    width: 235px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 56px;
-    padding: 20px 32px;
-    border-radius: 20px;
-    background-color: #181c29;
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 1.2;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  .hero-caption-bottom{
-    position: relative;
-    top:-90px;
-  }
-  
-  .hero-button:hover {
-    background-color: #ffffff;
-    color: #181c29;
-  }
+.hero {
+  background-color: #ff4646;
+  background-image: url("../assets/images/bg-snow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
 
+.hero-container {
+  position: relative;
+  min-height: 524px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero-ball {
+  position: absolute;
+  top:0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1440px;
+  height: 524px;
   
+}
+
+.hero-content {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 426px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-caption {
+  margin: 0;
+  width: 426px;
+  font-family: "Allura", cursive;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+.hero-title {
+  margin: 0;
+  width: 426px;
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 20px 32px;
+  border-radius: 20px;
+  background-color: #181c29;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-caption-top {
+  margin-bottom: 7px;
+}
+
+.hero-title {
+  margin-bottom: 14px;
+}
+
+.hero-button {
+  margin-bottom: 14px;
+}
+
+.hero-caption-bottom {
+  margin: 0;
+}
 
 .about {
     
-    background-color: #ff4646;
+  background-color: #ff4646;
+  background-image: url("../assets/images/bg-snow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
    
   }
   
   .about-content {
     display: flex;
     padding: 0;
-    width: 1276px;
+    max-width: 1276px; 
+    width: 100%;
     height: 528px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -231,10 +264,11 @@
   
   .about-box1 {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 60px;
+   display: flex;
+   
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 60px;
     
   }
   
@@ -243,11 +277,14 @@
     font-family: "Allura", cursive;
     font-size: 24px;
     color: #ff4646;
+    margin: 0 0 20px;
     
   }
   
   .about-title {
     margin-top: 30px;
+    margin: 0 0 20px;
+    max-width: 426px;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     line-height: 1.5;
@@ -260,7 +297,8 @@
  
   .about-text {
     
-    
+    margin: 0;
+    max-width: 426px;
     margin-top: 20px;
     font-size: 16px;
     line-height: 1.5;
@@ -286,7 +324,7 @@
   .slider {
     padding: 60px 0;
     background-color: #ff4646;
-    
+    background-image: url("../assets/images/bg-snow.png");
     background-repeat: repeat;
     overflow: hidden;
   }
@@ -367,15 +405,12 @@
     transition: background-color 0.3s ease, border-color 0.3s ease;
   }
   
-  .slider-btn:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-color: #ffffff;
-  }
+  
 
   .best-gifts {
     padding: 60px 0;
     background-color: #ff4646;
-    
+    background-image: url("../assets/images/bg-snow.png");
     background-repeat: repeat;
   }
   
@@ -420,13 +455,9 @@
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   }
   
-  .gift-card:hover {
-    transform: translateY(-4px);
-  }
   
-  .gift-card:hover .gift-card__title {
-    color: #ff4646;
-  }
+  
+  
   
   .gift-card__img {
     display: block;
@@ -479,11 +510,13 @@
   .cta {
     background-color: #ff4646;
     overflow: hidden;
+    background-image: url("../assets/images/bg-snow.png");
   }
   
   .cta-container {
     position: relative;
-    max-width: 1440px;
+    max-width: 1276px; 
+    width: 100%;
     min-height: 668px;
     margin: 0 auto;
     padding: 120px 0 60px;
@@ -534,10 +567,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  .cta-button:hover {
-    background-color: #ffffff;
-    color: #181c29;
-  }
+  
   
   .cta-caption {
     margin: 0 0 8px;
@@ -604,6 +634,7 @@
   
   .footer .container {
     max-width: 1276px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
   }
@@ -629,9 +660,6 @@
     transition: color 0.3s ease, background-color 0.3s ease;
   }
   
-  .footer-card:hover {
-    color: #ff4646;
-  }
   
   .footer-card__img {
     width: 80px;
@@ -680,20 +708,15 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-  }
-  
-  .footer-socials a:hover {
-    opacity: 0.7;
+    color: #181c29;
+    transition: color 0.3s ease, opacity 0.3s ease;
   }
   
   .footer-socials-icon {
     width: 24px;
     height: 24px;
-    object-fit: contain;
-    display: block;
   }
+  
   
   .footer-copy {
     margin: 0;
@@ -709,14 +732,12 @@
     font-family: "Allura", cursive;
     font-size: 24px;
     line-height: 1;
+    letter-spacing: 0.05em;
     color: #181c29;
     transition: color 0.3s ease;
   }
   
-  .footer-made:hover {
-    color: #ff4646;
-  }
-
+  
   .gifts-page {
     position: relative;
     background-color: #ff4646;
@@ -740,6 +761,7 @@
   
 .gift-title {
     max-width: 426px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   
@@ -778,12 +800,97 @@
     transition: background-color 0.3s ease;
   }
   
-  .tab.active:hover {
-    background: rgba(255,255,255,0.2);
-  }
+  
   
   .tab.active {
     background: rgba(255,255,255,0.3);
     pointer-events: none;
     cursor: default;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .navigation-link:hover {
+      background-color: rgba(255, 70, 70, 0.1);
+      color: #ff4646;
+    }
+  
+    .hero-button:hover,
+    .cta-button:hover {
+      background-color: #ffffff;
+      color: #181c29;
+    }
+  
+    .slider-btn:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-color: #ffffff;
+    }
+  
+    .gift-card:hover {
+      transform: translateY(-4px);
+    }
+  
+    .gift-card:hover .gift-card__title {
+      color: #ff4646;
+    }
+  
+    .footer-card:hover {
+      color: #ff4646;
+    }
+  
+    .footer-socials a:hover {
+      color: #ff4646;
+      opacity: 0.7;
+    }
+  
+    .footer-made:hover {
+      color: #ff4646;
+    }
+  
+    .tab.active:hover {
+      background: rgba(255,255,255,0.2);
+    }
+  }
+  
+  @media (max-width: 769px) {
+    .container {
+      padding: 0 8px;
+    }
+  
+    .navigation {
+      display: none;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  
+    .hero-container {
+      min-height: 572px;
+    }
+  
+  
+  
+    .hero-content {
+      top: 100px;
+      width: 426px;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    .hero-container {
+      min-height: 572px;
+    }
+  
+   
+  
+    .hero-content {
+      top: 92px;
+      width: calc(100% - 16px);
+      max-width: 364px;
+    }
+  
+    .hero-caption,
+    .hero-title {
+      width: 100%;
+    }
   }
