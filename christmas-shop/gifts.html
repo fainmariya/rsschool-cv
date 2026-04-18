@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIFTS</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./assets/icons/snowflake.svg">
 </head>
 <body>
     <header class="page-header">
@@ -17,18 +16,18 @@
       
           <nav class="navigation">
             <ul class="navigation-list">
-              <li class="navigation-item"><span class="navigation-link navigation-link--active">GIFTS</span></li>
-              <li class="navigation-item"><a class="navigation-link" href="./index.html#about">ABOUT</a></li>
-              <li class="navigation-item"><a class="navigation-link" href="./index.html#best">BEST</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="./gifts.html">GIFTS</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="#about">ABOUT</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="#best">BEST</a></li>
               <li class="navigation-item"><a class="navigation-link" href="#contacts">CONTACTS</a></li>
             </ul>
           </nav>
           <button class="burger" type="button" aria-label="Open menu">
             <span class="burger-line"></span>
             <span class="burger-line"></span>
-            <span class="burger-line"></span>
           </button>
         </div>
+        
       </header>
     <main>
         <section class="gifts-page">
@@ -60,7 +59,7 @@
                   <img src="./assets/images/gift-for-work.png" alt="Gift for work">
                   <div class="gift-card__content">
                     <span class="gift-card__category work">FOR WORK</span>
-                    <h2 class="gift-card__title">CONSOLE.LOG GURU</h2>
+                    <h3 class="gift-card__title">CONSOLE.LOG GURU</h3>
                   </div>
                 </article>
           
@@ -196,5 +195,15 @@
           </div>
         </div>
       </footer>
+      <div class="modal">
+        <div class="modal-overlay">
+          <div class="modal-content">
+            <button class="modal-close" type="button">✕</button>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/data.js"></script>
+      <script src="./js/gifts.js"></script>
 </body>
 </html>
