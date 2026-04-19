@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./assets/icons/favicon.ico">
 </head>
+
 <body>
     
     <header class="page-header">
@@ -24,7 +25,12 @@
               <li class="navigation-item"><a class="navigation-link" href="#contacts">CONTACTS</a></li>
             </ul>
           </nav>
+          <button class="burger" type="button" aria-label="Open menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
         </div>
+        
       </header>
     
     <main>
@@ -60,8 +66,8 @@
                 <p class="about-caption">About</p>
           
                 <h2 class="about-title">
-                  UNLEASH YOUR INNER<br>
-                  SUPERHERO!
+                  UNLEASH YOUR <br>
+                  INNER SUPERHERO!
                 </h2>
           
                 <p class="about-text">
@@ -110,7 +116,7 @@
             <h2 class="best-gifts__title">Especially for you</h2>
             <div class="gifts-grid">
                 <article class="gift-card">
-                    <img src="./assets/images/gift-for-work.png" alt="Gift for work">
+                    <img class="gift-card__img" src="./assets/images/gift-for-work.png" alt="Gift for work">
                     <div class="gift-card__content">
                       <span class="gift-card__category work">FOR WORK</span>
                       <h3 class="gift-card__title">CONSOLE.LOG GURU</h3>
@@ -118,7 +124,7 @@
                   </article>
                 
                   <article class="gift-card">
-                    <img src="./assets/images/gift-for-health.png" alt="Gift for health">
+                    <img class="gift-card__img" src="./assets/images/gift-for-health.png" alt="Gift for health">
                     <div class="gift-card__content">
                       <span class="gift-card__category health">FOR HEALTH</span>
                       <h3 class="gift-card__title">HYDRATION BOT</h3>
@@ -126,7 +132,7 @@
                   </article>
     
                   <article class="gift-card">
-                    <img src="./assets/images/gift-for-work.png" alt="Gift for work">
+                    <img class="gift-card__img" src="./assets/images/gift-for-work.png" alt="Gift for work">
                     <div class="gift-card__content">
                       <span class="gift-card__category health">FOR WORK</span>
                       <h3 class="gift-card__title">MERGE MASTER</h3>
@@ -134,7 +140,7 @@
                   </article>
     
                   <article class="gift-card">
-                    <img src="./assets/images/gift-for-harmony.png" alt="Gift for harmony">
+                    <img class="gift-card__img"src="./assets/images/gift-for-harmony.png" alt="Gift for harmony">
                     <div class="gift-card__content">
                       <span class="gift-card__category harmony">FOR HARMONY</span>
                       <h3 class="gift-card__title">SPONTANEOUS CODING PHILOSOPHER</h3>
@@ -148,21 +154,20 @@
     </section>
     <section class="cta">
         <div class="container cta-container">
-          <img class="cta-forest" src="./assets/images/bg-forest.png" alt="forest" aria-hidden="true">
           
-      
-          <div class="cta-content">
-            <h2 class="cta-title">
+          
+            <div class="cta-content">
+              <h2 class="cta-title">
               READY TO START YOUR <br>
               JOURNEY TO A BETTER <br>
               VERSION OF YOURSELF?
-            </h2>
+              </h2>
       
-            <a class="cta-button" href="./gifts.html">
+              <a class="cta-button" href="./gifts.html">
               EXPLORE MAGICAL GIFTS
-            </a>
+              </a>
       
-            <p class="cta-caption">The New Year is Coming Soon...</p>
+              <p class="cta-caption">The New Year is Coming Soon...</p>
       
             <div class="cta-timer">
               <div class="cta-time">
@@ -182,6 +187,7 @@
                 <span class="cta-label">SECONDS</span>
               </div>
             </div>
+          
           </div>
         </div>
       </section>
@@ -228,6 +234,17 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close" type="button">✕</button>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/data.js"></script>
+  <script src="./js/index.js"></script>
 </body>
+
 
 </html>
