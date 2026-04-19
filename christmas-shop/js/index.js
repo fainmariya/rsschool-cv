@@ -16,6 +16,9 @@ function closeMenu() {
 }
 
 function toggleMenu() {
+  console.log('click');
+  console.log(nav);
+
   if (burger.classList.contains('active')) {
     closeMenu();
   } else {
@@ -62,24 +65,32 @@ function updateTimer() {
   
   updateTimer();
   setInterval(updateTimer, 1000);
+
   const sliderRow = document.querySelector('.slider-row');
+  const sliderTrack = document.querySelector('.slider-track');
   const prev = document.querySelector('.slider-btn--prev');
   const next = document.querySelector('.slider-btn--next');
   
   let currentClick = 0;
   let maxClicks = 0;
   let step = 0;
+  let maxScroll = 0;
   
   function initSlider() {
     currentClick = 0;
     sliderRow.scrollLeft = 0;
   
-    if (window.innerWidth <= 768) {
-      maxClicks = 6;
-      step = 221.33;
-    } else {
+    if (window.innerWidth >= 769) {
       maxClicks = 3;
-      step = 372.33;
+    } else {
+      maxClicks = 6;
+    }
+  
+    maxScroll = sliderTrack.scrollWidth - sliderRow.clientWidth;
+    step = maxScroll / maxClicks;
+  
+    if (window.innerWidth >= 1440) {
+      step += 40;
     }
   
     updateButtons();
@@ -93,10 +104,14 @@ function updateTimer() {
   next.addEventListener('click', () => {
     if (currentClick < maxClicks) {
       currentClick += 1;
-      sliderRow.scrollBy({
-        left: step,
+  
+      const target = Math.min(step * currentClick, maxScroll);
+  
+      sliderRow.scrollTo({
+        left: target,
         behavior: 'smooth'
       });
+  
       updateButtons();
     }
   });
@@ -104,15 +119,20 @@ function updateTimer() {
   prev.addEventListener('click', () => {
     if (currentClick > 0) {
       currentClick -= 1;
-      sliderRow.scrollBy({
-        left: -step,
+  
+      const target = Math.min(step * currentClick, maxScroll);
+  
+      sliderRow.scrollTo({
+        left: target,
         behavior: 'smooth'
       });
+  
       updateButtons();
     }
   });
   
   window.addEventListener('resize', initSlider);
+  window.addEventListener('load', initSlider);
   
   initSlider();
 
@@ -240,7 +260,11 @@ function getSnowflakes(value) {
     modal.classList.add('active');
     body.classList.add('no-scroll');
   }
-
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
 
   container.addEventListener('click', (event) => {
     const card = event.target.closest('.gift-card');
