@@ -22,7 +22,12 @@
               <li class="navigation-item"><a class="navigation-link" href="#contacts">CONTACTS</a></li>
             </ul>
           </nav>
+          <button class="burger" type="button" aria-label="Open menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
         </div>
+        
       </header>
     <main>
         <section class="gifts-page">
@@ -43,109 +48,13 @@
               </div>
           
               <div class="gifts-tabs">
-                <span class="tab active">ALL</span>
-                <a href="#forwork" class="tab">FOR WORK</a>
-                <a href="#forhealth" class="tab">FOR HEALTH</a>
-                <a href="#forharmony" class="tab">FOR HARMONY</a>
+                <span class="gifts-tab">ALL</span>
+                <a class="gifts-tab" href="#forwork" class="tab">FOR WORK</a>
+                <a class="gifts-tab" href="#forhealth" class="tab">FOR HEALTH</a>
+                <a class="gifts-tab" href="#forharmony" class="tab">FOR HARMONY</a>
               </div>
           
-              <div class="gifts-grid">
-                <article class="gift-card" id="forwork">
-                  <img src="./assets/images/gift-for-work.png" alt="Gift for work">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category work">FOR WORK</span>
-                    <h3 class="gift-card__title">CONSOLE.LOG GURU</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card" id="forhealth">
-                  <img src="./assets/images/gift-for-health.png" alt="Gift for health">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category health">FOR HEALTH</span>
-                    <h3 class="gift-card__title">STEP MASTER</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-work.png" alt="Gift for work">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category work">FOR WORK</span>
-                    <h3 class="gift-card__title">BUG MAGNET</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-work.png" alt="Gift for work">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category work">FOR WORK</span>
-                    <h3 class="gift-card__title">SHORTCUT CHEATER</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-health.png" alt="Gift for health">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category health">FOR HEALTH</span>
-                    <h3 class="gift-card__title">POSTURE LEVITATION</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card" id="forharmony">
-                  <img src="./assets/images/gift-for-harmony.png" alt="Gift for harmony">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category harmony">FOR HARMONY</span>
-                    <h3 class="gift-card__title">BUG ACCEPTANCE GURU</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-health.png" alt="Gift for health">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category health">FOR HEALTH</span>
-                    <h3 class="gift-card__title">SNACK RESISTER</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-harmony.png" alt="Gift for harmony">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category harmony">FOR HARMONY</span>
-                    <h3 class="gift-card__title">ERROR LAUGHER</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-health.png" alt="Gift for health">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category health">FOR HEALTH</span>
-                    <h3 class="gift-card__title">HYDRATION BOT</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-work.png" alt="Gift for work">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category work">FOR WORK</span>
-                    <h3 class="gift-card__title">MERGE MASTER</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-harmony.png" alt="Gift for harmony">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category harmony">FOR HARMONY</span>
-                    <h3 class="gift-card__title">JOY CHARGER</h3>
-                  </div>
-                </article>
-          
-                <article class="gift-card">
-                  <img src="./assets/images/gift-for-harmony.png" alt="Gift for harmony">
-                  <div class="gift-card__content">
-                    <span class="gift-card__category harmony">FOR HARMONY</span>
-                    <h3 class="gift-card__title">SPONTANEOUS CODING PHILOSOPHER</h3>
-                  </div>
-                </article>
-              </div>
+              <div class="gifts-grid"></div>
             </div>
           </section>
     </main>
@@ -190,5 +99,16 @@
           </div>
         </div>
       </footer>
+      <div class="modal">
+        <div class="modal-overlay">
+          <div class="modal-content">
+            <button class="modal-close" type="button">✕</button>
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-top" type="button">↑</button>
+      <script src="./js/data.js"></script>
+      <script src="./js/gifts.js"></script>
 </body>
 </html>
