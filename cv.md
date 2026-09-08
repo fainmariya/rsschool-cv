@@ -2,7 +2,8 @@
 ![My Photo](./photo.jpg)
 ## FRONTEND DEVELOPER **JavaScript | TypeScript | React | HTML/CSS**
 Email: *fainmariya@gmail.com* | 🔗 [LinkedIn](https://www.linkedin.com/in/mariya-fain-6348981a0/?skipRedirect=true) | [GitHub](https://github.com/fainmariya/) | **Discord:** fainmariya
-********* 
+
+---
 
 ## SUMMARY
 Junior Frontend Developer focused on JavaScript and TypeScript, with hands-on project experience building responsive single-page applications and integrating REST APIs.
@@ -10,7 +11,9 @@ Junior Frontend Developer focused on JavaScript and TypeScript, with hands-on pr
 Comfortable with DOM APIs, Fetch, async/await, CRUD flows, client-side state, pagination, sorting, and browser animation. React project experience, along with backend fundamentals in Node.js, PostgreSQL, GraphQL, and Docker.
 
 Interested in building clean, accessible, maintainable web applications and continuing to grow as a Full-Stack Developer.
-*********
+
+---
+
 ## SKILLS
 
 **Core Frontend:**  
@@ -24,7 +27,9 @@ React, React Hooks, Node.js, Express, Fastify, PostgreSQL, GraphQL, Prisma, Dock
 
 **Workflow & Testing:**  
 Git, GitHub, npm, Chrome DevTools, VS Code, Jest, e2e testing basics, debugging
-*********
+
+---
+
 ## Code Examples
 ### JavaScript Code Example
 
@@ -37,7 +42,8 @@ function createPhoneNumber(numbers){
  
 }
 ```
-*********
+---
+
 ## PROJECTS
 ### Async Race — TypeScript, Vanilla DOM, REST API, Vite — [Live Demo](https://async-race-rqn0.onrender.com) | [GitHub](https://github.com/fainmariya/async-race)
  - Built a SPA for managing cars and racing engine simulations.
@@ -63,7 +69,9 @@ Fastify, GraphQL, DataLoader, queries, mutations, relations, and backend API pra
 
 #### UV Index Dashboard
 Node.js, EJS, and REST API integration with responsive data presentation.
-*********
+
+---
+
 ## EDUCATION
 **NodeJS** - RS School, 2025
 **Full-Stack Web Developer**  — Udemy, 2025
@@ -72,7 +80,9 @@ Node.js, EJS, and REST API integration with responsive data presentation.
 2023
 **Telecommunications Engineer** — Volga State University of Telecommunications and Informatics
 (Russia), 1996–2001
-*********
+
+---
+
 ## LANGUAGES
 - English Upper-Intermediate (B2) 
 - Russian (Native) 
