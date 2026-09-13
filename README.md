@@ -2,4 +2,6 @@
 
 ## CV
 
-[View my CV](https://fainmariya.github.io/rsschool-cv/)
+[Markdown CV](https://fainmariya.github.io/rsschool-cv/cv)
+
+[HTML CV](https://fainmariya.github.io/rsschool-cv/)
