@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariya Fain CV</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="page">
+        <header class="page-header">
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+              </ul>
+            </nav>
+
+            <div class="profile">
+                <img
+                class="profile-photo"
+                src="images/photo.jpg"
+                alt="My photo"
+                >
+                <div class="profile-text">
+                    <h1>Mariya Fain</h1>
+                    <p class="profession">Frontend Developer</p>
+                    <p>JavaScript | TypeScript | React | HTML/CSS</p>
+
+                    <ul class="profile-contacts">
+                        <li>
+                          <button
+                            type="button"
+                            class="phone-button"
+                            onclick="togglePhonePopup()"
+                            >
+                            📞 Phone
+                          </button>
+                        </li>
+                        <li>
+                          <a href="mailto:fainmariya@gmail.com">Email</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/fainmariya/">GitHub</a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/mariya-fain-6348981a0/">LinkedIn</a>
+                        </li>
+                    </ul>
+                        <ul id="phonePopup" class="phone-popup">
+                           <li><p class="phone-number">+972 51 571 7198</p></li>
+                        </ul>
+                </div>
+
+            </div>
+          </header>
+      <main class="page-main">
+        <aside class="sidebar">
+            <section class="section" id="summary">
+                <h2>Summary</h2>
+                <p>
+                  Junior Frontend Developer focused on JavaScript and TypeScript, with hands-on project experience building responsive single-page applications and integrating REST APIs.
+                  Comfortable with DOM APIs, Fetch, async/await, CRUD flows, client-side state, pagination, sorting, and browser animation. React project experience, along with backend fundamentals in Node.js, PostgreSQL, GraphQL, and Docker.
+                  Interested in building clean, accessible, maintainable web applications and continuing to grow as a Full-Stack Developer.
+                </p>
+              </section>
+
+            <section class="section" id="skills">
+              <h2>Skills</h2>
+              <ul class="section-list">
+                <li><strong>Core Frontend:</strong> JavaScript (ES6+), TypeScript, HTML5, CSS3, DOM API, Fetch API, async/await, REST APIs, Vite
+                </li>
+                <li><strong>Frameworks/Libraries:</strong> React, React Hooks, Node.js, Express, Fastify, PostgreSQL, GraphQL, Prisma, Docker</li>
+                <li><strong>Workflow &amp; Testing:</strong> Git, GitHub, npm, Chrome DevTools, VS Code, Jest, e2e testing basics, debugging</li>
+                <li><strong>UI &amp; Browser:</strong> Responsive design, SPA state, CRUD, pagination, sorting, requestAnimationFrame, semantic HTML, accessibility/WCAG basics</li>
+              </ul>
+            </section>
+          </aside>
+
+          <div class="content">
+
+            <section class="section" id="code">
+              <h2>Code Example</h2>
+              <pre><code>function createPhoneNumber(numbers) {
+    let areaCode = "(" + numbers.slice(0, 3).join("") + ")";
+    let partOne = numbers.slice(3, 6).join("");
+    let partTwo = numbers.slice(6, 10).join("");
+
+    return areaCode + " " + partOne + "-" + partTwo;
+  }
+              </code></pre>
+            </section>
+
+            <section class="section" id="projects">
+              <h2>Projects</h2>
+              <ul class="section-list">
+                <li>
+                  <strong>Async Race — TypeScript, Vanilla DOM, REST API, Vite</strong> —
+                  <a href="https://github.com/fainmariya/async-race">GitHub</a>
+                  <a href="https://async-race-rqn0.onrender.com">Live Demo</a>
+                  <p>- Built a SPA for managing cars and racing engine simulations.</p>
+                  <p>- Implemented Garage CRUD, server pagination and sorting, SPA state preservation, and requestAnimationFrame animation.</p>
+                  <p>- Implemented race winner detection and Winners statistics.</p>
+                  <p>- Structured API, state, services, and DOM UI into separate TypeScript modules.</p>
+                </li>
+                <li>
+                  <strong>Shelter — HTML, CSS, JavaScript, JSON</strong>
+                  <a href="https://github.com/fainmariya/shelter">GitHub</a>
+                  <a href="https://fainmariya.github.io/shelter/shelter/">Live Demo</a>
+                  <p>- Built a responsive two-page RS School project with desktop, tablet, and mobile layouts.</p>
+                  <p>- Implemented a burger menu, modal, carousel, pagination, and dynamic rendering from JSON.</p>
+                  <p>- Focused on semantic HTML, responsive layout, and clean JavaScript DOM logic.</p>
+                </li>
+                <li>
+                  <strong>Books Tracker (React + Express + PostgreSQL)</strong>
+                  <a href="https://github.com/fainmariya/sorting-books-read">GitHub</a>
+                  <a href="https://sorting-books-read.onrender.com/">Live Demo</a>
+                  <p>CRUD app for managing books with inline editing and sorting.</p>
+                  <p>Integrated OpenLibrary API for book covers.</p>
+                  <p>Deployed on Render.</p>
+                </li>
+                <li>
+                  <strong>UV Index Dashboard (Node + EJS + API)</strong>
+                  <a href="https://github.com/fainmariya/UV-Index-project">GitHub</a>
+                  <a href="https://uv-index-project.onrender.com/uv">Live Demo</a>
+                  <p>Displays real-time UV index data.</p>
+                  <p>Dynamic interface and responsive layout.</p>
+                  <p>Includes basic authentication.</p>
+                </li>
+              </ul>
+              <h3 class="additional-projects-title">Additional Technical Projects</h3>
+
+            <ul class="section-list additional-projects-list">
+              <li>
+                <strong>REST Service / Home Library</strong>
+                <p>TypeScript, Node.js, REST API, CRUD operations, and e2e tests.</p>
+              </li>
+
+              <li>
+                <strong>GraphQL Basics</strong>
+                <p>
+                  Fastify, GraphQL, DataLoader, queries, mutations, relations,
+                  and backend API practice.
+                </p>
+              </li>
+
+            </ul>
+            </section>
+
+            <section class="section" id="education">
+              <h2>Education</h2>
+              <ul class="section-list">
+                <li><strong>NodeJS</strong> — RS School, 2025</li>
+                <li><strong>Full-Stack Web Developer</strong> — Udemy, 2025</li>
+                <li><strong>Python Developer</strong> — Python Institute, 2023</li>
+                <li><strong>Python Developer</strong> — Specter, Certificate Associate in Python Programming Certification (Israel), 2022–2023</li>
+                <li><strong>Telecommunications Engineer</strong> — Volga State University of Telecommunications and Informatics (Russia), 1996–2001</li>
+              </ul>
+            </section>
+            <section class="section" id="languages">
+                <h2>Languages</h2>
+                <ul class="section-list">
+                  <li>English — Upper-Intermediate (B2)</li>
+                  <li>Russian — Native</li>
+                  <li>Hebrew — Intermediate</li>
+                </ul>
+              </section>
+          </div>
+      </main>
+
+      <footer class="page-footer">
+        <a href="https://github.com/fainmariya/">My GitHub</a>
+        <span>2026</span>
+        <a href="https://rs.school/courses/javascript">
+          <img
+            src="images/rs-school-logo.svg"
+            width="80"
+            height="30"
+            alt="RS School logo"
+          >
+        </a>
+      </footer>
+    </div>
+    <script>
+        function togglePhonePopup() {
+          const popup = document.getElementById("phonePopup");
+
+          if (popup.style.display === "block") {
+            popup.style.display = "none";
+          } else {
+            popup.style.display = "block";
+          }
+        }
+      </script>
+  </body>
+</html>
